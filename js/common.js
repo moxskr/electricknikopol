@@ -74,7 +74,7 @@ $(document).ready(function () {
 
     $('#contact-form').submit(function() {
         $.ajax({
-            type : 'GET',
+            type : 'POST',
             url : 'mail.php',
             data : $('#contact-form').serialize()
         }).done(function() {
